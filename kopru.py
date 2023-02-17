@@ -31,9 +31,7 @@ for i in alici_liste:
     if i[::-2] == "Doğru Değil":
         alici_liste.remove(i)
 
-gonder_liste_copy = gonder_liste[:]
-alici_liste_copy = alici_liste[:]
-
+#eşleştirme
 for i in gonder_liste:
     gonderen_il = i[5]
     for j in alici_liste:
@@ -45,4 +43,4 @@ for i in gonder_liste:
             gonder_liste.remove(i)
             
             
-print(result)
+print(gonder_liste)
