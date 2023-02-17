@@ -40,6 +40,9 @@ for i in gonder_liste:
         alici_il = j[6]
         if alici_il == gonderen_il:
             result.append([i[2], j[2]])
+            alici_liste.remove(j)
+            break
+            gonder_liste.remove(i)
             
             
 print(result)
