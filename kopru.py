@@ -31,16 +31,35 @@ for i in alici_liste:
     if i[::-2] == "Doğru Değil":
         alici_liste.remove(i)
 
+a = 0 
+for i in gonder_liste:
+    a += 1
+print(a)
+
+b = 0 
+for i in alici_liste:
+    b += 1
+print(b)
+
 #eşleştirme
 for i in gonder_liste:
-    gonderen_il = i[5]
+    gonderen_il = i[5].lower()
     for j in alici_liste:
-        alici_il = j[6]
+        alici_il = j[6].lower()
         if alici_il == gonderen_il:
             result.append([i[2], j[2]])
             alici_liste.remove(j)
-            break
             gonder_liste.remove(i)
+            break
             
-            
-print(gonder_liste)
+a = 0 
+for i in gonder_liste:
+    a += 1
+print(a)
+
+b = 0 
+for i in alici_liste:
+    b += 1
+print(b)
+
+
