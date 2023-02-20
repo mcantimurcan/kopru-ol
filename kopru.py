@@ -36,9 +36,11 @@ for i in alici_liste:
 m = 0
 while m < len(gonderen_liste):
     gonderen_il = gonderen_liste[m][5].lower()
+    gonderen_alan = gonderen_liste[m][7].lower()
     for i in alici_liste:
         alici_il = i[6].lower()
-        if alici_il == gonderen_il:
+        alici_alan = i[7].lower()
+        if alici_il == gonderen_il and gonderen_alan == alici_alan:
             result.append([gonderen_liste[m][2], i[2]])
             alici_liste.remove(i)
             break
